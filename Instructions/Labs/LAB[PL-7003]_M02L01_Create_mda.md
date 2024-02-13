@@ -1,122 +1,122 @@
 ---
 lab:
-    title: 'Lab 3: Create a model-driven app'
-    module: 'Module 2: Get started with model-driven apps in Power Apps'
+    title: 'ラボ 3: モデル駆動型アプリを作成する'
+    module: 'モジュール 2: Power Apps でモデル駆動型アプリを開始する'
 ---
 
-# Practice Lab 3 - Create a model-driven app
+# 演習ラボ 3 - モデル駆動型アプリの作成
 
-## Scenario
+## シナリオ
 
-In this lab, you will create model-driven app and add tables to the app.
+このラボでは、モデル駆動型アプリを作成し、そのアプリにテーブルを追加します。
 
-Contoso Real Estate wants to track two key elements:
+Contoso Real Estate は 2 つの重要な要素を追跡したいと考えています:
 
-- Real estate property listings
-- Who is scheduled for showings of real estate properties
+- 不動産物件一覧
+- 不動産物件の内覧予定者
 
-## What you will learn
+## 学習する内容
 
-- How to create a model-driven app
-- How to add tables to the app
+- モデル駆動型アプリの作成方法
+- アプリにテーブルを追加する方法
 
-## High-level lab steps
+## ハイレベルラボの手順
 
-- Create a model-driven app
-- Add tables to the app
+- モデル駆動型アプリを作成する
+- アプリにテーブルを追加する
   
-## Prerequisites
+## 前提条件
 
-- Must have completed **Lab 2: Data model**
+- **ラボ 2: データ モデル** を完了している必要があります。
 
 
-## Detailed steps
+## 詳細な手順
 
-## Exercise 1 - Build model-driven app
+## 演習 1 - モデル駆動型アプリを構築する
 
-In this exercise, you will create a model-driven app.
+この演習では、モデル駆動型アプリを作成します。
 
-### Task 1.1 – Create Property Management app
+### タスク 1.1 – プロパティ管理アプリの作成
 
-1. Navigate to the Power Apps Maker portal `https://make.powerapps.com`
+1. Power Apps メーカー ポータル `https://make.powerapps.com` に移動します。
 
-1. Make sure you are in the **Dev One** environment.
+1. **Dev One** 環境にいることを確認します。
 
-1. Select **Solutions**.
+1. **Solutions** を選択します。
 
-1. Open the **Property listings** solution.
+1. **Property listings** ソリューションを開きます。
 
-1. Select **+ New** and then select **App** and select **Model-driven app**.
+1. **+ New** を選択し、 **App** 、 **Model-driven app** を選択します。
 
     ![Screenshot of new model-driven app dialog.](../media/new-mda.png)
 
-1. Enter `Property Management` for **Name**.
+1. **Name** に `Property Management` と入力します。
 
-1. Select **Create**.
+1. **Create** を選択します。
 
     ![Screenshot of model-driven app designer.](../media/mda-designer.png)
 
 
-### Task 1.2 – Add tables
+### タスク 1.2 – テーブルの追加
 
-1. Select **+ Add page**.
+1. **+ Add page** を選択します。
 
     ![Screenshot of add page to model-driven app dialog](../media/mda-new-page.png)
 
-1. Select **Dataverse table**.
+1. **Dataverse table** を選択します。
 
-1. Select **Next**.
+1. **Next** を選択します。
 
-1. Enter `cre` in **Search**.
+1. **Search** に `cre` と入力します。
 
     ![Screenshot of add page to model-driven app dialog.](../media/mda-add-tables.png)
 
-1. Select **Open House**, **Real Estate Property**, and **Showing**.
+1. **Open House**、 **Real Estate Property**、**Showing** を選択します。
 
-1. Enter `account` in **Search** and select **Account**.
+1. **Search** に 'account' と入力し、 **Account** を選択します。
 
-1. Enter `contact` in **Search** and select **Contact**.
+1. **Search** に `contact` と入力し、 **Contact** を選択します。
 
-1. Select **Add**.
+1. **Add** を選択します。
 
     ![Screenshot of model-driven app designer with tables.](../media/mda-designer-with-tables.png)
 
-1. Select **Save**.
+1. **Save** を選択します。
 
-1. Select **Publish**.
+1. **Publish** を選択します。
 
 
-### Task 1.3 – Test
+### タスク 1.3 – テスト
 
-1. With the **Property Management** app designer open, select the **Play** button.
+1. **Property Management** アプリデザイナーを開いた状態で、 **Play** ボタンを選択します。
 
-1. Navigate to **Contacts**.
+1. **Contacts** に移動します。
 
-1. Select **+ New**.
+1. **+ New** を選択します。
 
-1. Enter `Jon` for **First Name**.
+1. **First Name** に `Jon` と入力します。
 
-1. Enter `Doe` for **Last Name**
+1. **Last Name** に `Doe` と入力します。
 
-1. Select **Save & Close**.
+1. **Save & Close** を選択します。
 
-1. Navigate to **Real Estate Properties**
+1. **Real Estate Properties** に移動します。
 
-1. Select **+ New**.
+1. **+ New** を選択します。
 
-1. Enter `Test Property` for **Property Name**.
+1. **Property Name** に `Test Property` と入力します。
 
-1. Select **Save**.
+1. **Save** を選択します。
 
-1. Select **Related** and **Showings**.
+1. **Related** と **Showings** を選択します。
 
     ![Screenshot of model-driven form related tables.](../media/mda-related-records.png)
 
-1. Select **+ New Showing**.
+1. **+ New Showing** を選択します。
 
-1. Enter `First Showing` for **Name**.
+1. **Name** に `First Showing` と入力します。
 
-1. Select **Save & Close**.
+1. **Save & Close** を選択します。
 
-1. Select **Save & Close**.
+1. **Save & Close** を選択します。
 
