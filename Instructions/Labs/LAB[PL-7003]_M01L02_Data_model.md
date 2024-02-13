@@ -1,365 +1,365 @@
 ---
 lab:
-    title: 'Lab 2: Data model'
-    module: 'Module 1: Create tables in Dataverse'
+    title: 'ラボ 2: データ モデル'
+    module: 'モジュール 1: Dataverse でテーブルを作成する'
 ---
 
-# Practice Lab 2 - Data model
+# 演習 2 - データ モデル
 
-## Scenario
+## シナリオ
 
-In this lab, you will create Dataverse tables, columns, and relationships.
+このラボでは、Dataverse のテーブル、列、リレーションシップを作成します。
 
-Contoso Real Estate wants to track two key elements:
+Contoso Real Estate は、次の 2 つの重要な要素を追跡したいと考えています:
 
-- Real estate property listings
-- Who is scheduled for showings of real estate properties
+- 不動産物件一覧
+- 不動産物件の内覧予定者
 
-## What you will learn
+## 学習する内容
 
-- How to create tables in Dataverse
-- How to add columns to Dataverse tables
-- How to create relationships between tables
+- Dataverse でテーブルを作成する方法
+- Dataverse テーブルに列を追加する方法
+- テーブル間のリレーションシップを作成する方法
 
-## High-level lab steps
+## ハイレベルラボの手順
 
-- Create tables
-- Create columns
-- Create relationships
+- テーブルの作成
+- 列の作成
+- 関係を築く
   
-## Prerequisites
+## 前提条件
 
-- Must have completed **Lab 1: Publisher and solution**
+- **ラボ 1: パブリッシャーとソリューション** を完了している必要があります
 
-## Detailed steps
+## 詳細な手順
 
-## Exercise 1 - Create tables
+## 演習 1 - テーブルの作成
 
-In this exercise, you will create and add tables to the solution.
+この演習では、テーブルを作成してソリューションに追加します。
 
-### Task 1.1 – Create Real Estate Property table
+### タスク 1.1 – 不動産物件テーブルの作成
 
-1. Navigate to the Power Apps Maker portal `https://make.powerapps.com`
+1. Power Apps メーカー ポータル `https://make.powerapps.com` に移動します。
 
-1. Make sure you are in the **Dev One** environment.
+1. **Dev One** 環境にいることを確認します。
 
-1. Select **Solutions**.
+1. **Solutions** を選択します。
 
-1. Open the **Property listings** solution.
+1. **Property listings** ソリューションを開きます。
 
-1. Select **+ New** and then select **Table** and select **Table** again.
+1. **+ New** を選択し、 **Table** を選択し、再度、 **Table** を選択します。
 
     ![Screenshot of new table pane](../media/new-table-pane.png)
 
-1. Enter `Real Estate Property` for **Display Name**. The plural name will be automatically populated.
+1. **Display Name** に `Real Estate Property` と入力します。複数名は、自動的に入力されます。
 
-1. Select the **Primary column** tab.
+1. **Primary column** タブを選択します。
 
-1. Enter `Property Name` for **Display Name**.
+1. **Display Name** に `Property Name` を入力します。
 
-1. Expand **Advanced options**, review the available options but don't change anything here.
+1. **Advanced options** を展開し、利用可能なオプションを確認します。ただし、ここでは、何も変更しません。
 
     ![Screenshot of table primary column tab](../media/primary-column-tab.png)
 
-1. Select the **Properties** tab.
+1. **Properties** タブを選択します。
 
-1. Expand **Advanced options**.
+1. **Advanced options** を展開します。
 
-1. Check **Creating a new activity**.
+1. **Creating a new activity** にチェックを入れます。
 
-1. Check **Appear in search results**.
+1. **Appear in search results** をオンにします。
 
     ![Screenshot of table advanced options](../media/table-options.png)
 
-1. Select **Save**.
+1. **Save** を選択します。
 
 
-### Task 1.2 – Create Showing table
+### タスク 1.2 – 表示テーブルの作成
 
-1. In the **Objects** pane, select **All**.
+1. **Objects** ペインで、 **All** を選択します。
 
-1. Select **+ New** and then select **Table** and select **Table** again.
+1. **+ New** を選択し、 **Table** を選択し、再度、 **Table** を選択します。
 
-1. Enter `Showing` for **Display Name**. The plural name will be automatically populated.
+1. **Display Name** に 'Showing' と入力します。複数名は、自動的に入力されます。
 
-1. Expand **Advanced options**.
+1. **Advanced options** を展開します。
 
-1. Check **Appear in search results**.
+1. **Appear in search results** にチェックを入れます。
 
-1. Select **Save**.
-
-
-### Task 1.3 – Create Open House table
-
-1. In the **Objects** pane, select **All**.
-
-1. Select **+ New** and then select **Table** and select **Table** again.
-
-1. Enter `Open House` for **Display Name**. The plural name will be automatically populated.
-
-1. Expand **Advanced options**.
-
-1. Select **Organization** for **Record ownership**.
-
-1. Select **Save**.
+1. **Save** を選択します。
 
 
-### Task 1.4 – Add contact table
+### タスク 1.3 – オープンハウステーブルの作成
 
-1. In the **Objects** pane, select **All**.
+1. **Objects** ペインで、 **All** を選択します。
 
-1. Select **Add existing** and choose **Table**.
+1. **+ New** を選択し、 **Table** を選択し、再度、 **Table** を選択します。
 
-1. Select the **Contact** table.
+1. **Display Name** に `Open House` と入力します。複数名は、自動的に入力されます。
 
-1. Select **Next**.
+1. **Advanced options** を展開します。
 
-1. Select **Add**.
+1. **Record ownership** として **Organization** を選択します。
+
+1. **Save** を保存します。
 
 
-## Exercise 2 - Create columns
+### タスク 1.4 – 連絡先テーブルの追加
 
-In this exercise, you will create columns to the tables to the solution.
+1. **Objects** ペインで、 **All** を選択します。
 
-### Task 2.1 – Create Real Estate Property columns
+1. **Add existing** を選択し、 **Table** を選択します。
 
-1. Navigate to the Power Apps Maker portal `https://make.powerapps.com`
+1. **Contact** テーブルを選択します。
 
-1. Make sure you are in the **Dev One** environment.
+1. **Next** を選択します。
 
-1. Select **Solutions**.
+1. **Add** を選択します。
 
-1. Open the **Property listings** solution.
 
-1. Select the **Real Estate Property** table.
+## 演習 2 - 列の作成
 
-1. Select **Properties**.
+この演習では、ソリューションのテーブルに列を作成します。
+
+### タスク 2.1 – 不動産プロパティ列の作成
+
+1. Power Apps メーカー ポータル `https://make.powerapps.com` に移動します。
+
+1. **Dev One** 環境にいることを確認します。
+
+1. **Solutions** ソリューションを選択します。
+
+1. **Property listings** ソリューションを開きます。
+
+1. **Real Estate Property** テーブルを選択します。
+
+1. **Properties** を選択します。
 
     ![Screenshot of Real Estate Property table](../media/real-estate-property-table.png)
 
-1. Check **Enable attachments** and select **Save**.
+1. **Enable attachments** をオンにして、 **Save** を選択します。
 
-1. Under **Schema**, select **Columns**.
+1. **Schema** で **Columns** を選択します。
 
-1. Select **+ New column**.
+1. **+ New column** を選択します。
 
     ![Screenshot of new column pane](../media/new-column-pane.png)
 
-1. Enter `Asking Price` for **Display name**.
+1. **Display name** に `Asking Price` と入力します。
 
-1. Select **Currency** in the **Data type** drop-down.
+1. **Data type** ドロップダウンで、 **Currency** を選択します。
 
-1. In the **Required** drop-down, select **Business required**.
+1. **Required** ドロップダウンで、 **Business required** を選択します。
 
-1. Select **Save**.
+1. **Save** を選択します。
 
-1. Select **+ New column**.
+1. **+ New column** を選択します。
 
-1. Enter `Street` for **Display name**.
+1. **Display name** に `Street` と入力します。
 
-1. In the **Required** drop-down, select **Business required**.
+1. **Required** ドロップダウンで、 **Business required** を選択します。
 
-1. Select **Save**.
+1. **Save** を選択します。
 
-1. Select **+ New column**.
+1. **+ New column** を選択します。
 
-1. Enter `City` for **Display name**.
+1. **Display name** に `City` と入力します。
 
-1. In the **Required** drop-down, select **Business required**.
+1. **Required** ドロップダウンで、 **Business required** を選択します。
 
-1. Select **Save**.
+1. **Save** を選択します。
 
-1. Select **+ New column**.
+1. **+ New column** を選択します。
 
-1. Enter `Bedrooms` for **Display name**.
+1. **Display name** に `Bedrooms` と入力します。
 
-1. Select **Choice** in the **Data type** drop-down and select **Choice** again.
+1. **Date type** ドロップダウンで、 **Choice** を選択し、再度、 **Choice** を選択します。
 
     ![Screenshot of new choice column pane](../media/add-choice.png)
 
-1. Select **Yes** for **Sync with global choice**.
+1. **Sync with global choice** で **Yes** を選択します。
 
-1. Select **+ New choice**.
+1. **+ New choice** を選択します。
 
     ![Screenshot of new global choice pane](../media/new-global-choice.png)
 
-1. Enter `Number of Rooms` for **Display name**.
+1. **Display name** に `Number of Rooms` を入力します。
 
-1. Enter `1` for **Label** and `1` for **Value**.
+1. **Label** に `1` を入力し、 **Value** に '1' を入力します。
 
-1. Select **+ New choice** and Enter `2` for **Label** and `2` for **Value**.
+1. **+ New choice** を選択し、 **Label** に `2` を入力し、 **Value** に '2' を入力します。
 
-1. Select **+ New choice** and Enter `3` for **Label** and `3` for **Value**.
+1. **+ New choice** を選択し、 **Label** に `3` を入力し、 **Label** に `3` を入力します。
 
-1. Select **+ New choice** and Enter `4` for **Label** and `4` for **Value**.
+1. **+ New choice** を選択し、 **Label** に `4` を入力し、 **Label** に `4` を入力します。
 
-1. Select **+ New choice** and Enter `5` for **Label** and `5` for **Value**.
+1. **+ New choice** を選択し、 **Label** に `5` を入力し、 **Label** に `5` を入力します。
 
     ![Screenshot of completed global choice pane](../media/global-choice.png)
 
-1. Select **Save**.
+1. **Save** を選択します。
 
-1. In **Sync this choice with** select **Number of Rooms**.
+1. **Sync this choice with** で **Number of Rooms** を選択します。
 
-1. Select **Save**.
+1. **Save** を選択します。
 
-1. Select **+ New column**.
+1. **+ New column** を選択します。
 
-1. Enter `Bathrooms` for **Display name**.
+1. **Display name** に `Bathrooms` と入力します。
 
-1. Select **Choice** in the **Data type** drop-down and select **Choice** again.
+1. **Data type** ドロップダウンで、 **Choice** を選択し、再度、 **Choice** を選択します。
 
-1. In **Sync this choice with** select **Number of Rooms**.
+1. **Sync this choice with** で **Number of Rooms** を選択します。
 
-1. Select **Save**.
+1. **Save** を選択します。
 
 
-### Task 2.2 – Create Showing columns
+### タスク 2.2 – 表示列の作成
 
-1. In the **Objects** pane, select **All**.
+1. **Objects** ペインで、 **All** を選択します。
 
-1. Select the **Showing** table.
+1. **Showing** テーブルを選択します。
 
-1. Under **Schema**, select **Columns**.
+1. **Schema** の下で、 **Columns** を選択します。
 
-1. Select **+ New column**.
+1. **+ New column** を選択します。
 
-1. Enter `Showing Date` for **Display name**.
+1. **Display name** に `Showing Date` を入力します。
 
-1. Select **Date and time** in the **Data type** drop-down.
+1. **Data type** ドロップダウンで、 **Date and time** を選択します。
 
-1. Select **Date only** in the **Format** drop-down.
+1. **フォーマット** ドロップダウンで、 **Date only** を選択します。
 
-1. In the **Required** drop-down, select **Business required**.
+1. **Required** 土ラップダウンで、 **Business required** を選択します。
 
-1. Select **Save**.
+1. **Save** を選択します。
 
-1. Select **+ New column**.
+1. **+ New column** を選択します。
 
-1. Enter `Comments` for **Display name**.
+1. **Display name** に `Comments` を入力します。
 
-1. Select **Text** in the **Data type** drop-down and then under **Multiple lines of text**, select **Plain text**.
+1. **Data type** ドロップダウンで、 **Text** を選択し、 **Multiple lines of text** で、 **Plain text** を選択します。
 
-1. Select **Save**.
+1. **Save** を選択します。
 
-1. Enter `Level of Interest` for **Display name**.
+1. **Display name** に `Level of Interest` を入力します。
 
-1. Select **Choice** in the **Data type** drop-down and select **Choice** again.
+1. **Data type** ドロップダウンで、 **Choice** を選択し、再度、 **Choice** を選択します。
 
-1. Select **No** for **Sync with global choice**.
+1. **Sync with global choice** で、 **No** を選択します。
 
-1. Enter `Very High` for **Label**.
+1. **Label** に `Very High` と入力します。
 
-1. Select **+ New choice** and Enter `High` for **Label**.
+1. **+ New choice** を選択し、**Label** に 'High' と入力します。
 
-1. Select **+ New choice** and Enter `Medium` for **Label**.
+1. **+ New choice** を選択し、 **Label** に `Medium` と入力します。
 
-1. Select **+ New choice** and Enter `Low` for **Label**.
+1. **+ New choice** を選択し、 **Label** に `Low` と入力します。
 
-1. Select **+ New choice** and Enter `No interest` for **Label**.
+1. **+ New choice** を選択し、 **Label** に `No interest` と入力します。
 
-1. Select **Save**.
+1. **Save** を選択します。
 
-1. Select **+ New column**.
+1. **+ New column** を選択します。
 
-1. Enter `Shown by` for **Display name**.
+1. **Display name** に `Shown by` と入力します。
 
-1. Select **Lookup** in the **Data type** drop-down and select **Lookup** again.
+1. **Data type** ドロップダウンで、 **Lookup** を選択し、再度 **Lookup** を選択します。
 
-1. In the **Related table** drop-down, select **User**.
+1. **Related table** ドロップダウンで、 **User** を選択します。
 
-1. Select **Save**.
+1. **Save** を選択します。
 
 
-### Task 2.3 – Create Open House columns
+### タスク 2.3 – オープンハウスの列を作成する
 
-1. In the **Objects** pane, select **All**.
+1. **Objects** ペインで、 **All** を選択します。
 
-1. Select the **Open House** table.
+1. **Open House** テーブルを選択します。
 
-1. Under **Schema**, select **Columns**.
+1. **Schema** 下で、 **Columns** を選択します。
 
-1. Select **+ New column**.
+1. **+ New column** を選択します。
 
-1. Enter `Open House Date` for **Display name**.
+1. **Display name** に `Open House Date` と入力します。
 
-1. Select **Date and time** in the **Data type** drop-down.
+1. **Data type** ドロップダウンで、 **Date and time** を選択します。
 
-1. Select **Date only** in the **Format** drop-down.
+1. **フォーマット** ドロップダウンで、 **Date only** を選択します。
 
-1. In the **Required** drop-down, select **Business required**.
+1. **Required** ドロップダウンで、 **Business required** を選択します。
 
-1. Select **Save**.
+1. **Save** を選択します。
 
 
-## Exercise 3 - Create relationships
+## 演習 3 - リレーションシップを作成する
 
-In this exercise, you will create relationships between the tables to the solution.
+この演習では、ソリューションに対するテーブル間の関係を作成します。
 
-### Task 3.1 – Real Estate Property to Contact relationship
+### タスク 3.1 – 不動産物件と連絡先のリレーションシップ
 
-1. Navigate to the Power Apps Maker portal `https://make.powerapps.com`
+1. Power Apps メーカー ポータル `https://make.powerapps.com` に移動します。
 
-1. Make sure you are in the **Dev One** environment.
+1. **Dev One** 環境にいることを確認します。
 
-1. Select **Solutions**.
+1. **Solutions** を選択します。
 
-1. Open the **Property listings** solution.
+1. **Property listings** ソリューションを開きます。
 
-1. Select the **Real Estate Property** table.
+1. **Real Estate Property** テーブルを選択します。
 
-1. Under **Schema**, select **Relationships**.
+1. **Schema** スキーマ下で、 **Relationships** を選択します。
 
-1. Select **+ New relationship** and then select **Many-to-one**.
+1. **+ New relationship** を選択し、 **Many-to-one** を選択します。
 
-1. In the **Related (One) Table** drop-down select **Contact**.
+1. **Related (One) Table** ドロップダウンで、 **Contact** を選択します。
 
-1. Enter `Client` for **Lookup column display name**.
+1. **Lookup column display name** に `Client` と入力します。
 
-1. In the **Lookup column requirement** drop-down, select **Business Required**.
+1. **Lookup column requirement** ドロップダウンで、 **Business Required** を選択します。
 
-1. Select **Done**.
+1. **Done** を選択します。
 
 
-### Task 3.2 – Real Estate Property to Showing relationship
+### タスク 3.2 – 不動産物件と表示関係
 
-1. Select **+ New relationship** and then select **One-to-many**.
+1. **+ New relationship** を選択し、 **One-to-many** を選択します。
 
-1. In the **Related (Many) Table** drop-down select **Showing**.
+1. **Related (Many) Table** ドロップダウンで、 **Showing** を選択します。
 
-1. In the **Lookup column requirement** drop-down, select **Business Required**.
+1. **Lookup column requirement** ドロップダウンで、 **Business Required** を選択します。
 
-1. Select **Done**.
+1. **Done** を選択します。
 
 
-### Task 3.3 – Real Estate Property to Open House relationship
+### タスク 3.3 – 不動産物件とオープンハウスの関係
 
-1. Select **+ New relationship** and then select **One-to-many**.
+1. **+ New relationship** を選択し、 **One-to-many** を選択します。
 
-1. In the **Related (Many) Table** drop-down select **Open House**.
+1. **Related (Many) Table** ドロップダウンで、 **Open House** を選択します。
 
-1. In the **Lookup column requirement** drop-down, select **Business Required**.
+1. **Lookup column requirement** ドロップダウンで、 **Business Required** を選択します。
 
-1. Expand **General**.
+1. **General** を選択します。
 
-1. Enter `realestateproperty_openhouse` for **Relationship name**.
+1. **Relationship name** に `realestateproperty_openhouse` と入力します。
 
-1. Select **Done**.
+1. **Done** を選択します。
 
 
-### Task 3.4 – Showing to Contact relationship
+### タスク 3.4 – 連絡先リレーションシップの表示
 
-1. In the **Objects** pane, select **All**.
+1. **Objects** ペインで、 **All** を選択します。
 
-1. Select the **Showing** table.
+1. **Showing** テーブルを選択します。
 
-1. Under **Schema**, select **Relationships**.
+1. **Schema** の下で、 **Relationships** を選択します。
 
-1. Select **+ New relationship** and then select **Many-to-one**.
+1. **+ New relationship** を選択し、 **Many-to-one** を選択します。
 
-1. In the **Related (One) Table** drop-down select **Contact**.
+1. **Related (One) Table** ドロップダウンで、 **Contact** を選択します。
 
-1. Enter `Shown to` for **Lookup column display name**.
+1. **Lookup column display name** に `Shown to` と入力します。
 
-1. Select **Done**.
+1. **Done** を選択します。
 
