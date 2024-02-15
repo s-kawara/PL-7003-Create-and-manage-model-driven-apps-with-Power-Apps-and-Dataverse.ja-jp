@@ -1,82 +1,82 @@
 ---
 lab:
-    title: 'Lab 5: Configure a model-driven app'
-    module: 'Module 3: Configure forms, charts, and dashboards in model-driven apps'
+    title: 'ラボ 5: モデル駆動型アプリを構成する'
+    module: 'モジュール 3: モデル駆動型アプリでフォーム、グラフ、ダッシュボードを構成する'
 ---
 
-# Practice Lab 5 - Configure a model-driven app
+# 演習 5 - モデル駆動型アプリを構成する
 
-## Scenario
+## シナリオ
 
-In this lab, you will configure a model-driven app.
+このラボでは、モデル駆動型アプリを構成します。
 
-## What you will learn
+## 学習する内容
 
-- How to configure navigation for a model-driven app
-- How to restrict views in a model-driven app
+- モデル駆動型アプリのナビゲーションを構成する方法
+- モデル駆動型アプリでビューを制限する方法
 
-## High-level lab steps
+## ハイレベルラボの手順
 
-- Add groups to navigation
-- Move tables in navigation
-- Restrict views in the app
+- ナビゲーションにグループを追加する
+- ナビゲーション内のテーブルを移動する
+- アプリ内での閲覧を制限する
   
-## Prerequisites
+## 前提条件
 
-- Must have completed **Lab 2: Data model**, **Lab 3: Create model-driven app**, and **Lab 4: Configure forms and views**
+- **ラボ 2: データ モデル**, **ラボ 3: モデル駆動型アプリを作成する**, と **ラボ 4: フォームとビューを構成する** を完了している必要があります。
 
-## Detailed steps
+## 詳細な手順
 
-## Exercise 1 - Configure model-driven app
+## 演習 1 - モデル駆動型アプリを構成する
 
-In this exercise, you will configure navigation and tables a model-driven app.
+この演習では、モデル駆動型アプリのナビゲーションとテーブルを構成します。
 
-### Task 1.1 – Configure groups
+### タスク 1.1 – グループの構成
 
-1. Navigate to the Power Apps Maker portal <https://make.powerapps.com>.
+1. Power Apps メーカー ポータル <https://make.powerapps.com> に移動します。
 
-1. Make sure you are in the **Dev One** environment.
+1. **Dev One** 環境にいることを確認します。
 
-1. Select **Solutions**.
+1. **Solutions** を選択します。
 
-1. Open the **Property listings** solution.
+1. **Property listings** ソリューションを開きます。
 
-1. In the **Objects** pane on the left, select **Apps**.
+1. 左側の **Objects** ペインで、 **Apps** を選択します。
 
-1. Select the **Property Management** app, select the **Commands** menu (...), and select **Edit** > **Edit in new tab**.
+1. **Property Management** アプリを選択し、 **Commands** メニュー (...) を選択して、 **Edit** > **Edit in new tab** を選択します。
 
-1. Select **New Group** in the **Navigation** pane.
+1. **Navigation** ペインで **New Group** を選択します。
 
     ![Screenshot of model-driven app group.](../media/mda-group.png)
 
-1. In the properties pane, enter `Clients` for **Title**.
+1. プロパティ ペインで、 **Title** に `Clients` と入力します。
 
-1. Select **Navigation**, select the **Commands** menu (...) **...** and select **New group**.
+1. **Navigation** を選択し、 **Commands** メニュー (...) **...** を選択して、 **New group** を選択します。
 
-1. In the properties pane, enter `Properties` for **Title**.
+1. プロパティ ペインで、 **Title** に `Properties` と入力します。
 
-1. In the **Navigation pane**, select **Showings view**, select the **Commands** menu (...) and select **Move down**.
+1. **Navigation pane** で、 **Showings view** を選択し、 **Commands** メニュー (...) を選択して、 **Move down** を選択します。
 
-1. In the **Navigation pane**, select **Real Estate Properties view**, select the **Commands** menu (...) and select **Move down**.
+1. **Navigation pane** で、 **Real Estate Properties view** を選択し、 **Commands** メニュー (...) を選択して、 **Move down** を選択します。
 
-1. In the **Navigation pane**, select **Open Houses view**, select the **Commands** menu (...) and select **Move down** three times.
+1. **Navigation pane** で、 **Open Houses view** を選択し、 **Commands** メニュー (...) を選択して、 **Move down** を3回選択します。
 
     ![Screenshot of model-driven app designer with navigation.](../media/mda-navigation.png)
 
 
-### Task 1.2 – Restrict views
+### タスク 1.2 – ビューを制限する
 
-1. In the **Navigation** pane, select **Showings view**.
+1. **Navigation** ペインで、 **Showings view** を選択します。
 
-1. In the **Showings** pane, select the **Views** tab.
+1. **Showings** ペインで、 **Views** タブを選択します。
 
-1. Select the **Inactive Showings view**, in the right-hand pane, and select the **Commands** menu (...) and select **Remove**.
+1. 右側のペインで、 **Inactive Showings view** を選択し、 **Commands** メニュー (...) を選択して、 **Remove** を選択します。
 
     ![Screenshot of removing a view in the model-driven app designer.](../media/mda-remove-view.png)
 
-1. Select **Save**.
+1. **Save** を選択します。
 
-1. Select **Publish**.
+1. **Publish** を選択します。
 
-1. **Close** the app designer and select **Done**.
+1. アプリデザイナーで、 **Close** を選択し、 **Done** を選択します。
 
