@@ -1,95 +1,95 @@
 ---
 lab:
-    title: 'Lab 6: Export solution'
-    module: 'Module 4: Manage solutions in Power Apps and Power Automate'
+    title: 'ラボ 6: ソリューションのエクスポート'
+    module: 'モジュール 4: Power Apps と Power Automate でソリューションを管理する'
 ---
 
-# Practice Lab 6 - Export solution
+# 演習 6 - ソリューションのエクスポート
 
-## Scenario
+## シナリオ
 
-In this lab, you will export the solution
+このラボでは、ソリューションをエクスポートします
 
-## What you will learn
+## 学習する内容
 
-- How to a export a Microsoft Dataverse solution
+- Microsoft Dataverse ソリューションをエクスポートする方法
 
-## High-level lab steps
+## ハイレベルラボの手順
 
-- Publish customizations
-- Run Solution checker
-- Export solution
+- カスタマイズを公開する
+- ソリューションチェッカーを実行する
+- ソリューションのエクスポート
   
-## Prerequisites
+## 前提条件
 
-- Must have completed **Lab 5: Configure model-driven app**
+- **ラボ 5: モデル駆動型アプリを構成する** を完了している必要があります。
 
-## Detailed steps
+## 詳細な手順
 
-## Exercise 1 - Export solution
+## 演習 1 - ソリューションのエクスポート
 
-In this exercise, you will export the solution from the Development environment.
+この演習では、開発環境からソリューションをエクスポートします。
 
-### Task 1.1 – Publish changes
+### タスク 1.1 – 変更を公開する
 
-1. Navigate to the Power Apps Maker portal `https://make.powerapps.com`
+1. Power Apps メーカー ポータル `https://make.powerapps.com` に移動します。
 
-1. Make sure you are in the **Dev One** environment.
+1. **Dev One** 環境にいることを確認します。
 
-1. Select **Solutions**.
+1. **Solutions** を選択します。
 
-1. Select the **Property listings** solution.
+1. **Property listings** ソリューションを選択します。
 
-1. In the solution, select the **Overview** tab.
+1. ソリューションで、 **Overview** タブを選択します。
 
     ![Solution overview page.](../media/solution-overview.png)
 
-1. Select **Publish all customizations**.
+1. **Publish all customizations** を選択します。
 
 
-### Task 1.2 – Solution checker
+### タスク 1.2 – ソリューション チェッカー
 
-1. In the solution, select the **Overview** tab.
+1. ソリューションで、 **Overview** タブを選択します。
 
-1. Select **Run check** under **Solution status overview**.
+1. **Solution status overview** で **Run check** を選択します。
 
-1. Wait a few minutes for the solution checker to complete.
+1. ソリューション チェッカーが完了するまで数分待ちます。
 
     ![Solution checker results page.](../media/solution-checker.png)
 
-1. You should see no warnings or errors.
+1. 警告やエラーは表示されないはずです。
 
 
-### Task 1.3 – Export managed solution
+### タスク 1.3 – マネージド ソリューションのエクスポート
 
-1. Select **Export**.
+1. **Export** を選択します。
 
-1. Select **Next**.
+1. **Next** を選択します。
 
-1. The version number should have been incremented to **1.0.0.1**.
+1. バージョン番号は、 **1.0.0.1** に増加しているはずです。
 
     ![Export solution pane.](../media/export-solution.png)
 
-1. Select **Managed** for **Export as**.
+1. **Export as** で **Managed** を選択します。
 
-1. Select **Export**.
+1. **Export** を選択します。
 
-1. The export will be prepared in the background. When the solution is ready, select the **Download** button.
+1. エクスポートはバックグランドで準備されます。ソリューションの準備ができたら、 **Download** ボタンを選択します。
 
 
-### Task 1.4 – Export unmanaged solution
+### タスク 1.4 – アンマネージド ソリューションのエクスポート
 
-1. Select **Export**.
+1. **Export** を選択します。
 
-1. Select **Next**.
+1. **Next** を選択します。
 
-1. The version number should have been incremented to **1.0.0.2**.
+1. バージョン番号は、 **1.0.0.2** に増加しているはずです。
 
-1. Change the version number to `1.0.0.1`
+1. バージョン番号は、 `1.0.0.1` に変更されます。
 
-1. Select **Unmanaged** for **Export as**.
+1. **Export as** で **Unmanaged** 選択します。
 
-1. Select **Export**.
+1. **Export** を選択します。
 
-1. The export will be prepared in the background. When the solution is ready, select the **Download** button.
+1. エクスポートはバックグラウンドで準備されます。ソリューションの準備ができたら、 **Download** ボタンを選択します。
 
